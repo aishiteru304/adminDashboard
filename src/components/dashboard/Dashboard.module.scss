@@ -1,0 +1,274 @@
+.wrapDashBoard {
+    padding-top: 144px;
+    min-height: calc(100vh - 32px);
+}
+
+.wrapItem {
+    background-color: var(--bg-item-color);
+    width: 100%;
+    min-height: max-content;
+    border-radius: 8px;
+    padding: 16px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.1) 0rem 0.25rem 0.375rem -0.0625rem, rgba(0, 0, 0, 0.06) 0rem 0.125rem 0.25rem -0.0625rem;
+    margin-bottom: 64px;
+}
+
+.type {
+    position: absolute;
+    right: 16px;
+}
+
+.typeText {
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+.typeNum {
+    color: var(--text-dark-color);
+    font-weight: 700;
+    font-size: 30px;
+    padding-left: 16px;
+}
+
+.borderTime {
+    margin-top: 60px;
+}
+
+.percent {
+    display: inline-block;
+    color: rgb(76, 175, 80);
+    font-weight: 700;
+    margin-top: 16px;
+}
+
+.timeCompare {
+    padding-left: 4px;
+    color: var(--text-color);
+    display: inline-block;
+    margin-top: 16px;
+}
+
+.wrapTypeIcon {
+    width: 64px;
+    height: 64px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.87);
+    border-radius: 8px;
+    position: absolute;
+    top: -24px;
+    color: white;
+    font-size: 24px;
+}
+
+.wrapChart {
+    background-color: rgb(26, 115, 232);
+    height: 168px;
+    border-radius: 8px;
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    top: -24px;
+}
+
+.chartImg {
+    width: 100%;
+    height: 100%;
+}
+
+.chartName {
+    display: block;
+    margin-top: 158px;
+    color: var(--text-dark-color);
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.chartPerformance {
+    padding-top: 8px;
+    display: inline-block;
+    color: var(--text-color);
+    padding-bottom: 16px;
+    text-transform: capitalize;
+}
+
+.wrapChartUpdated {
+    margin-top: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    color: var(--text-dark-color);
+}
+
+.chartUpdated {
+    line-height: 16px;
+    color: var(--text-color);
+    padding-left: 4px;
+}
+
+.projectTitle {
+    display: block;
+    color: var(--text-dark-color);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.projectSubTitle {
+    color: var(--text-color);
+    font-weight: 400;
+    display: flex;
+    padding-top: 8px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.checkIcon {
+    padding-right: 4px;
+    height: 20px;
+    width: 20px;
+    color: rgb(26, 115, 232);
+
+}
+
+.arrowUpIcon {
+    padding-right: 4px;
+    height: 20px;
+    width: 20px;
+    color: rgb(76, 175, 80);
+}
+
+.wrapOverviewItem {
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.wrapOverviewIcon {
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+    border-radius: 50%;
+    color: white;
+    margin-right: 16px;
+}
+
+.headerTable {
+    text-transform: uppercase;
+    padding: 16px 0;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 16px;
+    color: var(--text-color);
+}
+
+.tableItem {
+    align-items: center;
+    padding: 8px 0;
+    border-top: solid 2px rgb(240 242 245);
+}
+
+.tableItemCompany {
+    display: flex;
+    height: 36px;
+    padding: 8px 0;
+    font-size: 20px;
+    color: var(--text-dark-color);
+
+}
+
+.companyName {
+    padding-left: 16px;
+    line-height: 20px;
+    font-size: 16px;
+    height: 36px;
+}
+
+.tableItemMember {
+    width: 100%;
+    height: 36px;
+    position: relative;
+    padding: 6px 0;
+    display: flex;
+}
+
+.memberAvatar {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.memberAvatar:hover {
+    z-index: 2;
+}
+
+.memberAvatar img:hover {
+    scale: (1.1);
+}
+
+.memberName {
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    width: 100px;
+    text-align: center;
+    left: 10px;
+    left: -40px;
+    top: 40px;
+    opacity: 0;
+    z-index: 3;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.memberName::before {
+    display: block;
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    top: -5px;
+    left: 47%;
+    transform: rotate(45deg);
+}
+
+.memberAvatar:hover .memberName {
+    opacity: 1;
+}
+
+.tableItemBudget {
+    color: var(--text-color);
+    height: 36px;
+    line-height: 36px;
+    font-weight: 600;
+}
+
+.tableItemCompletion {
+    background-color: rgb(240 242 245);
+    height: 6px;
+    margin-right: 16px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.percentCompletion {
+    position: absolute;
+    height: 100%;
+    border-radius: 4px;
+}
+
+@media (max-width:996px) {
+    .wrapOverView {
+        margin-top: 32px;
+    }
+}
+
+@media (max-width:768px) {
+    .wrapDashBoard {
+        margin-top: 32px;
+    }
+}

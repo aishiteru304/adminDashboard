@@ -1,0 +1,159 @@
+.wrapHeader {
+    position: fixed;
+    min-height: 80px;
+    background-color: var(--bg-item-color);
+    right: 2rem;
+    left: 308px;
+    border-radius: 8px;
+    z-index: 5;
+    box-shadow: rgba(0, 0, 0, 0.05) 0 4px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.wrapLogo {
+    display: flex;
+}
+
+.wrapLogo li {
+    margin: 0 4px;
+    color: var(--text-color);
+}
+
+.wrapLogo li a {
+    color: var(--text-color);
+}
+
+.location {
+    color: var(--text-dark-color);
+    padding: 8px 0 16px 8px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.headerRight {
+    display: flex;
+    height: 44px;
+}
+
+.wrapInput {
+    position: relative;
+}
+
+.headerInput {
+    border-radius: 4px;
+    padding-left: 8px;
+    border: solid 1px rgb(210 214 218);
+    outline-color: rgb(26, 115, 232);
+    height: 100%;
+    color: rgb(194 197 209);
+    background-color: var(--bg-item-color);
+}
+
+.labelInput {
+    position: absolute;
+    display: block;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(194 197 209);
+    pointer-events: none;
+    user-select: none;
+    transition: top 0.2s ease;
+}
+
+.headerInput:focus+.labelInput {
+    top: 0;
+    background-color: var(--bg-item-color);
+    padding: 0 4px;
+    color: rgb(26, 115, 232);
+    font-size: 14px;
+}
+
+
+
+.wrapHeaderIcon {
+    display: flex;
+}
+
+.wrapHeaderIcon li {
+    margin: 0 12px;
+    font-size: 20px;
+    padding: 12px 0;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.notificationIcon {
+    position: relative;
+}
+
+.wrapNotification {
+    position: absolute;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.05) 2px 2px;
+    background-color: var(--bg-item-color);
+    top: 70px;
+    right: -18px;
+    width: 0;
+    height: 0;
+    transition: width 0.5s ease, height 0.5s ease, opacity 0.5s ease;
+    z-index: 20;
+    padding: 8px;
+    opacity: 0;
+}
+
+.cover {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 15;
+    cursor: default;
+}
+
+.wrapItemNoti {
+    min-height: 44px;
+    display: flex;
+    color: var(--text-dark-color) !important;
+    border-radius: 8px;
+    padding-left: 8px !important;
+    margin-bottom: 8px !important;
+    position: relative;
+}
+
+.wrapItemNoti:hover {
+    background-color: var(--text-color);
+}
+
+.itemNotiText {
+    min-height: 20px;
+    line-height: 20px;
+    margin-left: 8px;
+}
+
+
+// Reponsive
+@media (min-width:1201px) {
+    .display {
+        display: none;
+    }
+}
+
+@media (max-width:1200px) {
+    .wrapHeader {
+        left: 32px;
+    }
+}
+
+@media (max-width:768px) {
+    .headerRight {
+        justify-content: space-between;
+    }
+
+}
