@@ -22,13 +22,13 @@ const notifications = [
 export default function Header() {
 
     const [isShowMenu, setIsShowMenu] = useState(false)
-    const [locationHeader, setLocationHeader] = useState('Dashbroad')
+    const [locationHeader, setLocationHeader] = useState('Dashboard')
     const [isShowNoti, setIsShowNoti] = useState(false)
     const location = useLocation()
     const pathname = decodeURIComponent(location.pathname)
 
     useEffect(() => {
-        pathname === '/adminDashboard' ? setLocationHeader('Dashboard') : setLocationHeader(pathname.split('/')[2])
+        (pathname === '/adminDashboard' || pathname === '/adminDashboard/') ? setLocationHeader('Dashboard') : setLocationHeader(pathname.split('/')[2])
     }, [pathname])
 
     const handleShowMenu = () => {

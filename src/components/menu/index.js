@@ -42,9 +42,9 @@ export default function Menu() {
     const location = useLocation()
     useEffect(() => {
         const pathname = decodeURIComponent(location.pathname)
-        if (pathname === '/') handleSelect(0)
+        if (pathname === '/adminDashboard' || pathname === '/adminDashboard/') handleSelect(0)
         else {
-            const index = menuItem.findIndex(item => item.title === pathname.split('/')[1])
+            const index = menuItem.findIndex(item => item.title === pathname.split('/')[2])
             if (index === -1) setSelected([false, false, false, false, false, false, false])
             else handleSelect(index)
         }
