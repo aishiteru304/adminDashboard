@@ -7,7 +7,7 @@ import { AiFillGithub, AiOutlineSlack } from 'react-icons/ai'
 
 const authors = [
     {
-        avatar: '/img/alexAvatar.jpg',
+        avatar: 'img/alexAvatar.jpg',
         name: 'alexander smith',
         mail: 'alexander@gmail.com',
         postion: 'manager',
@@ -16,7 +16,7 @@ const authors = [
         employed: '23/04/18'
     },
     {
-        avatar: '/img/jessicaAvatar.jpg',
+        avatar: 'img/jessicaAvatar.jpg',
         name: 'jessica doe',
         mail: 'jessica@gmail.com',
         postion: 'programator',
@@ -25,7 +25,7 @@ const authors = [
         employed: '11/01/19'
     },
     {
-        avatar: '/img/rominaAvatar.jpg',
+        avatar: 'img/rominaAvatar.jpg',
         name: 'romina hadid',
         mail: 'romina@gmail.com',
         postion: 'manager',
@@ -34,7 +34,7 @@ const authors = [
         employed: '19/09/17'
     },
     {
-        avatar: '/img/ryanAvatar.jpg',
+        avatar: 'img/ryanAvatar.jpg',
         name: 'ryan tomspon',
         mail: 'ryan@gmail.com',
         postion: 'programator',

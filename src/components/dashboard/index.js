@@ -19,19 +19,19 @@ const tableDashboard = [
         budget: '$14,000',
         members: [
             {
-                img: '/img/ryanAvatar.jpg',
+                img: 'img/ryanAvatar.jpg',
                 name: 'Ryan Tomspon'
             },
             {
-                img: '/img/rominaAvatar.jpg',
+                img: 'img/rominaAvatar.jpg',
                 name: 'Romina Hadid'
             },
             {
-                img: '/img/alexAvatar.jpg',
+                img: 'img/alexAvatar.jpg',
                 name: 'Alexander Smith'
             },
             {
-                img: '/img/jessicaAvatar.jpg',
+                img: 'img/jessicaAvatar.jpg',
                 name: 'Jessica Doe'
             }
         ],
@@ -43,11 +43,11 @@ const tableDashboard = [
         budget: 'Not set',
         members: [
             {
-                img: '/img/rominaAvatar.jpg',
+                img: 'img/rominaAvatar.jpg',
                 name: 'Romina Hadid'
             },
             {
-                img: '/img/jessicaAvatar.jpg',
+                img: 'img/jessicaAvatar.jpg',
                 name: 'Jessica Doe'
             }
         ],
@@ -59,15 +59,15 @@ const tableDashboard = [
         budget: '$20,500',
         members: [
             {
-                img: '/img/jessicaAvatar.jpg',
+                img: 'img/jessicaAvatar.jpg',
                 name: 'Jessica Doe'
             },
             {
-                img: '/img/rominaAvatar.jpg',
+                img: 'img/rominaAvatar.jpg',
                 name: 'Romina Hadid'
             },
             {
-                img: '/img/alexAvatar.jpg',
+                img: 'img/alexAvatar.jpg',
                 name: 'Alexander Smith'
             }
         ],
@@ -79,11 +79,11 @@ const tableDashboard = [
         budget: '$2,000',
         members: [
             {
-                img: '/img/rominaAvatar.jpg',
+                img: 'img/rominaAvatar.jpg',
                 name: 'Romina Hadid'
             },
             {
-                img: '/img/alexAvatar.jpg',
+                img: 'img/alexAvatar.jpg',
                 name: 'Alexander Smith'
             }
         ],
@@ -95,7 +95,7 @@ const tableDashboard = [
         budget: '$500',
         members: [
             {
-                img: '/img/jessicaAvatar.jpg',
+                img: 'img/jessicaAvatar.jpg',
                 name: 'Jessica Doe'
             }
         ],
