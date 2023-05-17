@@ -79,10 +79,10 @@ export default function Header() {
                         <div onClick={e => e.stopPropagation()} className={styles.wrapNotification} style={{ width: isShowNoti ? '280px' : 0, height: isShowNoti ? 'max-content' : 0, opacity: isShowNoti ? 1 : 0 }}>
                             {
                                 notifications.map((notification, index) => (
-                                    <li className={styles.wrapItemNoti} key={index}>
+                                    <div className={styles.wrapItemNoti} key={index}>
                                         {isShowNoti && notification.icon}
                                         {isShowNoti && <h5 className={styles.itemNotiText}> {notification.text}</h5>}
-                                    </li>
+                                    </div>
 
                                 ))
                             }

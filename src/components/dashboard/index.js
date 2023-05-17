@@ -9,6 +9,8 @@ import { IoMdKey } from 'react-icons/io'
 import { SiAdobexd } from 'react-icons/si'
 import { GiPlatform } from 'react-icons/gi'
 import { CgShapeRhombus } from 'react-icons/cg'
+import { ChartBar, ChartLine } from '../chart'
+
 
 const tableDashboard = [
     {
@@ -139,7 +141,7 @@ const types = [
 
 const charts = [
     {
-        img: './img/chart1.png',
+        type: <ChartBar />,
         bgImg: 'rgb(26, 115, 232)',
         name: 'Website Views',
         performance: 'last campaign performance',
@@ -147,7 +149,7 @@ const charts = [
         percent: null
     },
     {
-        img: './img/chart2.png',
+        type: <ChartLine />,
         bgImg: 'rgb(76, 175, 80)',
         name: 'daily sales',
         performance: 'increase in today sales.',
@@ -155,7 +157,7 @@ const charts = [
         percent: '+15% '
     },
     {
-        img: './img/chart3.png',
+        type: <ChartLine />,
         bgImg: 'rgba(0, 0, 0, 0.87)',
         name: 'completed tasks',
         performance: 'last campaign performance',
@@ -193,7 +195,7 @@ export default function Dashboard() {
                         <div className='col-4 col-md-6 col-sm-12' key={index}>
                             <div className={styles.wrapItem}>
                                 <div className={styles.wrapChart} style={{ backgroundColor: chart.bgImg }}>
-                                    <img className={styles.chartImg} src={chart.img} alt=''></img>
+                                    {chart.type}
                                 </div>
                                 <h6 className={styles.chartName}>{chart.name}</h6>
                                 {chart.percent && <span style={{ color: 'var(--text-dark-color)', fontWeight: 600 }}>{chart.percent}</span>}

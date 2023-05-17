@@ -6,9 +6,12 @@ import Footer from './components/footer';
 import Dashboard from './components/dashboard';
 import Tables from './components/tables'
 import Control from './components/control';
+import NotFound from './components/notFound';
 
 function App() {
+
   return (
+
     <div className="App">
       <Menu />
       <div className='wrapContent'>
@@ -16,8 +19,9 @@ function App() {
 
         <Routes>
           <Route exact path='/' element={<Dashboard />} />
-          <Route exact path='/Dashboard' element={<Dashboard />} />
-          <Route exact path='/Tables' element={<Tables />} />
+          <Route exact path='/dashboard' element={<Dashboard />} />
+          <Route exact path='/tables' element={<Tables />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
 
         <Footer />

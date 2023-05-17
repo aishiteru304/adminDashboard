@@ -53,15 +53,21 @@ body {
   padding: 0 !important;
 }
 
-.col-3 {
-  width: 25%;
-  padding: 0 16px;
+.col-1-5 {
+  width: 12.5%;
 }
 
 .col-2 {
   width: 16.6667%;
   padding: 0 16px;
 }
+
+.col-3 {
+  width: 25%;
+  padding: 0 16px;
+}
+
+
 
 .col-4 {
   width: 33.3333%;
