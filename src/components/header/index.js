@@ -26,7 +26,7 @@ export default function Header() {
     const pathname = decodeURIComponent(location.pathname)
 
     useEffect(() => {
-        pathname === '/' ? setLocationHeader('Dashboard') : setLocationHeader(pathname.split('/')[1])
+        pathname === '/' ? setLocationHeader('Dashboard') : setLocationHeader(pathname.split('/')[2])
     }, [pathname])
 
     const handleShowMenu = () => {

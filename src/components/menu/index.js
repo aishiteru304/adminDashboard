@@ -63,7 +63,7 @@ export default function Menu() {
             <div className={`borderBottom ${styles.borderMaterial}`}></div>
             {
                 menuItem.map((item, index) => (
-                    <Link to={`/${item.title}`} className={styles.menuItem} key={index} style={{ backgroundColor: selected[index] ? 'var(--menu-item-color)' : '', color: 'var(--menu-color)' }}>
+                    <Link to={`adminDashboard/${item.title}`} className={styles.menuItem} key={index} style={{ backgroundColor: selected[index] ? 'var(--menu-item-color)' : '', color: 'var(--menu-color)' }}>
                         {item.icon}
                         <h4 className={styles.menuItemTitle}>{item.title}</h4>
                     </Link>

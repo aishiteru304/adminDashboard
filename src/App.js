@@ -18,9 +18,9 @@ function App() {
         <Header />
 
         <Routes>
-          <Route exact path='/' element={<Dashboard />} />
-          <Route exact path='/dashboard' element={<Dashboard />} />
-          <Route exact path='/tables' element={<Tables />} />
+          <Route exact path='/adminDashboard' element={<Dashboard />} />
+          <Route exact path='adminDashboard/dashboard' element={<Dashboard />} />
+          <Route exact path='adminDashboard/tables' element={<Tables />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
 
