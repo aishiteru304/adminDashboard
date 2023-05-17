@@ -70,7 +70,7 @@ export default function Menu() {
                 ))
             }
 
-            <Link className={styles.upgrate} to='/' style={{ backgroundColor: 'var(--menu-item-color)' }}>upgrate to pro</Link>
+            <Link className={styles.upgrate} to='/adminDashboard' style={{ backgroundColor: 'var(--menu-item-color)' }}>upgrate to pro</Link>
 
 
         </div>

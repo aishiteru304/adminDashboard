@@ -5,6 +5,8 @@ import { AiFillHome, AiFillSetting, AiFillBell, AiOutlineMenuFold, AiOutlineMenu
 import { RxAvatar } from 'react-icons/rx'
 import { MdMail } from 'react-icons/md'
 import { FaShoppingCart } from 'react-icons/fa'
+import { Button } from '@mui/material';
+
 
 const notifications = [
     {
@@ -26,7 +28,7 @@ export default function Header() {
     const pathname = decodeURIComponent(location.pathname)
 
     useEffect(() => {
-        pathname === '/' ? setLocationHeader('Dashboard') : setLocationHeader(pathname.split('/')[2])
+        pathname === '/adminDashboard' ? setLocationHeader('Dashboard') : setLocationHeader(pathname.split('/')[2])
     }, [pathname])
 
     const handleShowMenu = () => {
@@ -59,7 +61,7 @@ export default function Header() {
         <div className={styles.wrapHeader}>
             <div className={styles.left}>
                 <div className={styles.wrapLogo}>
-                    <li><Link to='/'><AiFillHome /></Link></li>
+                    <li><Link to='/adminDashboard'><AiFillHome /></Link></li>
                     <li>{pathname}</li>
                 </div>
                 <h6 className={styles.location}>{locationHeader}</h6>
@@ -80,8 +82,9 @@ export default function Header() {
                             {
                                 notifications.map((notification, index) => (
                                     <div className={styles.wrapItemNoti} key={index}>
-                                        {isShowNoti && notification.icon}
-                                        {isShowNoti && <h5 className={styles.itemNotiText}> {notification.text}</h5>}
+                                        {isShowNoti && <Button className={styles.itemNotiText}> <i>{notification.icon}</i> {notification.text}</Button>}
+
+
                                     </div>
 
                                 ))
