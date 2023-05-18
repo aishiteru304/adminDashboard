@@ -43,17 +43,27 @@ const options = {
 
 export function ChartBar() {
 
+    // let selectedShares
 
     // const secretBytes = new TextEncoder().encode('19120700');
     // split(secretBytes, 3, 2)
     //     .then(shares => {
-    //         const selectedShares = [shares[1], shares[2]];
+    //         selectedShares = [shares[1], shares[2]];
+    //     })
+
+
+
+    // useEffect(() => {
+    //     if (selectedShares) {
+
     //         combine(selectedShares)
     //             .then((recoveredBytes) => {
     //                 const recoveredSecret = new TextDecoder().decode(recoveredBytes);
     //                 console.log(recoveredSecret);
     //             })
-    //     })
+    //     }
+
+    // }, [selectedShares])
 
 
     return (

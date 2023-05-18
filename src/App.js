@@ -6,6 +6,7 @@ import Footer from './components/footer';
 import Dashboard from './components/dashboard';
 import Tables from './components/tables'
 import Control from './components/control';
+import Billing from './components/billling';
 import NotFound from './components/notFound';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route exact path='/adminDashboard' element={<Dashboard />} />
           <Route exact path='adminDashboard/dashboard' element={<Dashboard />} />
           <Route exact path='adminDashboard/tables' element={<Tables />} />
+          <Route exact path='adminDashboard/billing' element={<Billing />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
 

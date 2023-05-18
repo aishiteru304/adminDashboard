@@ -43,11 +43,20 @@ body {
   background-image: linear-gradient(to right, rgba(52, 71, 103, 0), rgba(52, 71, 103, 0.4), rgba(52, 71, 103, 0))
 }
 
+
+
 .row {
   display: flex;
-  width: 100%;
   flex-wrap: wrap;
 }
+
+.subRow {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+
 
 .p-0 {
   padding: 0 !important;
@@ -74,14 +83,28 @@ body {
   padding: 0 16px;
 }
 
+.col-5 {
+  width: 41.6667%;
+  padding: 0 16px;
+}
+
 .col-6 {
   width: 50%;
   padding: 0 16px;
 }
 
+.col-7 {
+  width: 58.3333%;
+  padding: 0 16px;
+}
 
 .col-8 {
   width: 66.6666%;
+  padding: 0 16px;
+}
+
+.col-12 {
+  width: 100%;
   padding: 0 16px;
 }
 
@@ -90,6 +113,18 @@ body {
 @media (max-width:1200px) {
   .wrapContent {
     margin-left: 0;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-12 {
+    width: 100%;
+  }
+
+  .p-lg-0 {
+    padding: 0 !important;
   }
 }
 
