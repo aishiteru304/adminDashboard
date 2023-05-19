@@ -1,0 +1,91 @@
+.wrapNotifications {
+    padding: 0 16px;
+    padding-top: 144px;
+    min-height: calc(100vh - 92px);
+}
+
+.wrapNotiItem {
+    background-color: var(--bg-item-color);
+    max-width: 800px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.1) 0rem 0.25rem 0.375rem -0.0625rem, rgba(0, 0, 0, 0.06) 0rem 0.125rem 0.25rem -0.0625rem;
+    min-height: 200px;
+    margin: 0 auto;
+    padding: 16px;
+    margin-bottom: 32px;
+}
+
+.notiItemHeader {
+    color: var(--text-dark-color);
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.alertItem {
+    min-height: 50px;
+    border-radius: 8px;
+    margin-top: 16px;
+    line-height: 50px;
+    padding-left: 16px;
+    padding-right: 40px;
+    position: relative;
+    color: white;
+}
+
+.alertItemDelete {
+    position: absolute;
+    font-size: 20px;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.notiItemSubHeader {
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 8px;
+    margin-bottom: 48px;
+}
+
+.wrapNotiItemBtn {
+    box-shadow: rgba(0, 0, 0, 0.1) 0rem 0.25rem 0.375rem -0.0625rem, rgba(0, 0, 0, 0.06) 0rem 0.125rem 0.25rem -0.0625rem;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.notiItemBtn {
+    color: white !important;
+    width: 100% !important;
+    min-height: 50px !important;
+}
+
+.notiContent {
+    background-color: var(--bg-item-color);
+    box-shadow: rgba(0, 0, 0, 0.1) 0rem 0.25rem 0.375rem -0.0625rem, rgba(0, 0, 0, 0.06) 0rem 0.125rem 0.25rem -0.0625rem;
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+    width: 320px;
+    height: 100px;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.notiContentHeader {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notiMessage {
+    margin-top: 16px;
+    color: var(--text-color);
+    font-weight: 400;
+}

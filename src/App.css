@@ -144,4 +144,8 @@ body {
     width: 100%;
   }
 
+  .col-sm-6 {
+    width: 50%;
+  }
+
 }
